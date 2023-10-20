@@ -5,12 +5,11 @@
  * @arg: type struct va_arg where is allocated printf arguments
  * Return: the string
  */
+
 int print_rev(va_list arg)
 {
-
 	char *s = va_arg(arg, char*);
-	int i;
-	int j = 0;
+	int i, j = 0;
 
 	if (s == NULL)
 		s = "(null)";

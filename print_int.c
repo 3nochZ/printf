@@ -1,13 +1,15 @@
 #include "main.h"
+
 /**
  * print_int - prints integer
  * @arg: argument to print
  * Return: number of characters printed
  */
+
 int print_int(va_list arg)
 {
 	int n = va_arg(arg, int);
-	int num, last = n % 10, 
+	int num, last = n % 10;
 	int digit, exp = 1;
 	int  i = 1;
 
@@ -22,6 +24,7 @@ int print_int(va_list arg)
 		last = -last;
 		i++;
 	}
+
 	if (num > 0)
 	{
 		while (num / 10 != 0)
@@ -30,6 +33,7 @@ int print_int(va_list arg)
 			num = num / 10;
 		}
 		num = n;
+		
 		while (exp > 0)
 		{
 			digit = num / exp;

@@ -19,10 +19,11 @@ typedef struct format
 	int (*f)();
 } convert;
 
-int print_%();
+int print_percent();
 int print_HEXA(va_list arg);
 int print_char(va_list arg);
-
+int print_hexa(va_list arg);
+int print_hexa_aux(unsigned long int num);
 int print_ptr(va_list arg);
 int print_HEXA_aux(unsigned int num);
 int print_excl_str(va_list arg);

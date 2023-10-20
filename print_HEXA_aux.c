@@ -6,12 +6,11 @@
  * Return: count
  */
 
-int print_HEXA_aux(va_list arg)
+int print_HEXA_aux(unsigned int num)
 {
 	int i;
 	int count = 0;
 	int *arr;
-	unsigned int num = va_arg(arg, unsigned int);
 	unsigned int temp = num;
 
 	while (num / 16 != 0)
@@ -20,7 +19,7 @@ int print_HEXA_aux(va_list arg)
 		count++;
 	}
 	count++;
-	array = malloc(count * sizeof(int));
+	arr = malloc(count * sizeof(int));
 
 	for (i = 0; i < count; i++)
 	{

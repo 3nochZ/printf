@@ -5,6 +5,7 @@
  * @arg: arguments.
  * Return: counter.
  */
+
 int print_ptr(va_list arg)
 {
 	void *p;
@@ -26,6 +27,6 @@ int print_ptr(va_list arg)
 	a = (unsigned long int)p;
 	_putchar('0');
 	_putchar('x');
-	b = print_HEXA_aux(a);
+	b = print_hexa_aux(a);
 	return (b + 2);
 }

@@ -5,6 +5,7 @@
  * @s: type char pointer
  * Return: c.
  */
+
 int _strlen(char *s)
 {
 	int c;

@@ -1,15 +1,14 @@
 #include "main.h"
+
 /**
  * print_rot13 - printf str to ROT13 place into buffer
  * @arg: type struct va_arg where is allocated printf arguments
  * Return: count
- *
  */
+
 int print_rot13(va_list arg)
 {
-	int i, j, 
-	int counter = 0;
-	int k = 0;
+	int i, j, count = 0, k = 0;
 	char *s = va_arg(arg, char*);
 	char alpha[] = {"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"};
 	char beta[] = {"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM"};
@@ -28,6 +27,7 @@ int print_rot13(va_list arg)
 				k = 1;
 			}
 		}
+
 		if (!k)
 		{
 			_putchar(s[i]);

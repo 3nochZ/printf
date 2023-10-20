@@ -7,14 +7,14 @@
  * Return: strlen
  */
 
-int _printf(const char const format, ...)
+int _printf(const char  * const format, ...)
 {
 	convert m[] = {
 		{"%s", print_string}, {"%c", print_char},
-		{"%%", print_%}, {"%i", print_int},
+		{"%%", print_percent}, {"%i", print_int},
 		{"%d", print_decimal}, {"%r", print_rev},
 		{"%R", print_rot13}, {"%b", print_binary},
-		{"%u", print_unsigned}, {"%o", print_octal}, {"%x", print_HEXA_aux},
+		{"%u", print_unsigned}, {"%o", print_octal}, {"%x", print_hexa},
 		{"%X", print_HEXA}, {"%S", print_excl_str}, {"%p", print_ptr}
 	};
 
@@ -26,6 +26,7 @@ int _printf(const char const format, ...)
 	if ((format[0] == '%' && format[1] == '\0') || format == NULL)
 		return (-1);
 
+Code:
 	while (format[i] != '\0')
 	{
 		j = 13;
@@ -35,7 +36,7 @@ int _printf(const char const format, ...)
 			{
 				len += m[j].f(args);
 				i = i + 2;
-				goto Here;
+				goto Code;
 			}
 			j--;
 		}

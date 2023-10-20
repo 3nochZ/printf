@@ -2,16 +2,14 @@
 
 /**
  * print_excl_str; prints exclusive string
- * arg: argument
+ * @arg: argument
  * Return: strlen
  */
 
 int print_excl_str(va_list arg)
 {
 	char *s;
-	int i;
-	int len = 0;
-	int cast;
+	int i, len = 0, cast;
 
 	s = va_arg(arg, char *);
 	if (s == NULL)
@@ -30,7 +28,7 @@ int print_excl_str(va_list arg)
 				len++;
 			}
 
-			len = len + print_HEXA_aux(cast);
+			len += print_HEXA_aux(cast);
 		}
 
 		else

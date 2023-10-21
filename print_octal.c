@@ -27,12 +27,12 @@ int print_octal(va_list arg)
 		arr[i] = temp % 8;
 		temp /= 8;
 	}
-	
+
 	for (i = count - 1; i >= 0; i--)
 	{
 		_putchar(arr[i] + '0');
 	}
-	
+
 	free(arr);
 	return (count);
 }

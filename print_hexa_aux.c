@@ -2,7 +2,7 @@
 
 /**
  * print_hexa_aux - prints hexadecimal number
- * @arg: argument
+ * @num: number
  * Return: count
  */
 
@@ -34,6 +34,6 @@ int print_hexa_aux(unsigned long int num)
 		_putchar(arr[i] + '0');
 	}
 
-	free (arr);
+	free(arr);
 	return (count);
 }

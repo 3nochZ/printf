@@ -19,7 +19,7 @@ typedef struct format
 	int (*f)();
 } convert;
 
-int print_percent();
+int print_percent(void);
 int print_HEXA(va_list arg);
 int print_char(va_list arg);
 int print_hexa(va_list arg);
@@ -44,6 +44,6 @@ int print_char(va_list argl);
 int print_string(va_list arg);
 int _putchar(char c);
 int _printf(const char *format, ...);
-
+int print_null(void);
 
 #endif

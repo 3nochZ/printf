@@ -20,7 +20,7 @@ int print_string(va_list arg)
 			_putchar(s[i]);
 		return (len);
 	}
-	
+
 	else
 	{
 		len = _strlen(s);

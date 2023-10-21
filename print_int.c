@@ -33,7 +33,7 @@ int print_int(va_list arg)
 			num = num / 10;
 		}
 		num = n;
-		
+
 		while (exp > 0)
 		{
 			digit = num / exp;

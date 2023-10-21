@@ -28,7 +28,7 @@ int print_binary(va_list arg)
 		}
 	}
 
-	if(count == 0)
+	if (count == 0)
 	{
 		count++;
 		_putchar('0');

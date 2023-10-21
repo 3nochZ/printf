@@ -5,6 +5,8 @@
  * _printf: my own printf
  * @format: identifier
  * Return: strlen
+ *
+ * Description: function like printf
  */
 
 int _printf(const char  * const format, ...)

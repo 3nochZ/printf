@@ -35,6 +35,6 @@ int print_hexa(va_list arg)
 		_putchar(arr[i] + '0');
 	}
 
-	free (arr);
+	free(arr);
 	return (count);
 }

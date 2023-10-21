@@ -34,7 +34,7 @@ int print_HEXA(va_list arg)
 			arr[i] = arr[i] + 7;
 		_putchar(arr[i] + '0');
 	}
-	
+
 	free(arr);
 	return (count);
 }

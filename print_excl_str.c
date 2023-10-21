@@ -4,6 +4,8 @@
  * print_excl_str; prints exclusive string
  * @arg: argument
  * Return: strlen
+ *
+ * Description: prints excl str
  */
 
 int print_excl_str(va_list arg)

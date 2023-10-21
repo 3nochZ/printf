@@ -2,11 +2,12 @@
 
 /**
  * print_null - prints nothing
- * Return: 1
+ * Return: 0
  */
 
 int print_null(void)
 {
+	_putchar(0);
 	return (1);
 }
 
